@@ -4,8 +4,8 @@
 
 int main( int argc, char ** argv ) {
 	const static int maxBuf = 128;
-	const char * s1 = "String one";
-	const char * s2 = "String two";
+	const char * s1 = "String number one";
+	const char * s2 = "String number two";
 	char sd1[maxBuf];
 	char sd2[maxBuf];
 	int i = 0;
@@ -29,7 +29,7 @@ int main( int argc, char ** argv ) {
 
 	i = strcmp(sd1, sd2);	// strcmp -- compare strings
 	printf("sd1 %s sd2 (%d)\n", (i == 0) ? "==" : "!=", i);
-	i = strcmp(sd2, s2);
+	i = strcmp(sd2, s2); // strcmp -- compare strings
 	printf("sd2 %s s2 (%d)\n", (i == 0) ? "==" : "!=", i);
 
 	c = 'g';
